@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-console.log('### Hello from myscript.js')
+const [name] = process.argv.slice(2);
+
+console.log(`### Hello ${name}`)
