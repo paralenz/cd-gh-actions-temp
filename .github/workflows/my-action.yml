@@ -22,7 +22,7 @@ jobs:
       - uses: paralenz/actions/setup-node@master
       - name: Set some output
         id: nodejs
-        run: |
+        run: >-
           echo "::set-output name=NODE_VERSION::$(
             cat .tool-versions |
             grep nodejs |
