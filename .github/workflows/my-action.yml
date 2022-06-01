@@ -23,11 +23,7 @@ jobs:
       - name: Set some output
         id: nodejs
         run: >-
-          echo "::set-output name=NODE_VERSION::$(
-            cat .tool-versions |
-            grep nodejs |
-            sed 's/nodejs \(.*\)$/\1/'
-          )"
+          echo "::set-output name=NODE_VERSION::27.0.0"
 
   nodeVersion:
     name: Get the version of node
