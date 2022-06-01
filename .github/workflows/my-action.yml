@@ -14,7 +14,7 @@ jobs:
       - run: node myscript.js "from the SETUP step"
   
   nodejs:
-    name: Set some setOutput
+    name: Read node version from .tool-versions file
     runs-on: ubuntu-latest
     needs: [setup]
     steps:
