@@ -16,13 +16,13 @@ jobs:
   nodejs:
     name: Set some setOutput
     runs-on: ubuntu-latest
-    
+    needs: [setup]
     steps:
       - uses: actions/checkout@v3
       - uses: paralenz/actions/setup-node@master
       - name: Set some output
         id: nodejs
-        run: ::set-output name:NODE_VERSION::$(node --version)
+        run: echo "::set-output name:NODE_VERSION::$(node --version)"
 
   greeter:
     name: Greeter
