@@ -27,7 +27,7 @@ jobs:
   greeter:
     name: Greeter
     runs-on: ubuntu-latest
-    needs: [setOutput]
+    needs: [nodejs]
     steps:
       - uses: actions/checkout@v3
       - uses: paralenz/actions/setup-node@master
