@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: paralenz/actions/setup-node@master
-      - run: echo "${{ secret.MY_VERY_SECRET }}"
-      - run: node console.log(${{ secret.MY_VERY_SECRET }})
-      - run: node myscript.js ${{ secret.MY_VERY_SECRET }}
+      - run: echo "${{ secrets.MY_VERY_SECRET }}"
+      - run: node console.log(${{ secrets.MY_VERY_SECRET }})
+      - run: node myscript.js ${{ secrets.MY_VERY_SECRET }}
       
